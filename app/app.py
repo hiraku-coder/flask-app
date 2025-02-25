@@ -50,8 +50,8 @@ if __name__ == "__main__":
 '''
 from flask import Flask, render_template, request, redirect, url_for, session
 
-app = Flask(__name__)
-app.secret_key = "your_secret_key"  # セッションの暗号化キー
+#app = Flask(__name__)
+#app.secret_key = "your_secret_key"  # セッションの暗号化キー
 
 # 仮のQRコード用トークン（本番ではDBで管理するのが望ましい）
 valid_tokens = {"abcdef": True}  # token のリスト（認証情報は保存しない）
