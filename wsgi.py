@@ -4,7 +4,7 @@ from app.app import app
 if __name__ == "__main__":
     app.run()
 '''
-from app import app  # __init__.py 内の `app` を読み込む
+from app import app  # ✅ app.py から Flask インスタンスをインポート
 
 if __name__ == "__main__":
-    app.run()
+    app.run()  # ✅ Render/Gunicorn を使う場合は、これは実行されない
